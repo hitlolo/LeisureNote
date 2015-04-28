@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/13 -->
+<!-- Description:颜色资源-->
+
+    <resources>
+    	<color name="transparent_background">#30ffffff</color>
+        <color name="green_brown">#121a2a</color>
+        <color name="blue_iron">#1a2933</color>
+        <color name="light_green">#bfcae6</color>
+        <color name="peach_red">#f58f98</color>
+        <color name="yellow_orange">#f09a42</color>
+        <color name="white">#ffffff</color>
+        <color name="black">#000000</color>
+        <color name="right_green">#83c75d</color>
+        <color name="light_orange">#fbb53a</color>
+        <color name="back_green">#c8e281</color>
+        <color name="transparent_black">#99000000</color>
+        <color name="purple">#8f006d</color>
+        <color name="transparent">#ffffffff</color>
+        <color name="green">#489620</color>
+        <color name="pink">#f5a89a</color>
+        <color name="yellow">#c7c300</color>
+        <color name="gray">#b7b7b7</color>
+        <color name="cover">#55afaeae</color>
+    </resources>

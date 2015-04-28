@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/20 -->
+<!-- Description:注册页面布局 -->
+
+<FrameLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/title"
+>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:gravity="left"
+		android:layout_marginLeft="55px"
+		>
+				<ImageView
+					
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/boundry"
+					
+					
+				></ImageView>
+				
+				<Button
+					
+					android:layout_width="wrap_content"
+					android:layout_height="63px"
+					android:background="@null"
+					android:text="LerisureBooks"
+					android:textColor="@drawable/font_color"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:gravity="bottom|left"
+					android:layout_gravity="center_horizontal|left"
+				></Button>
+				
+				<ImageView
+					
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/boundry"
+					
+					
+				></ImageView>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="right"
+		android:gravity="right"
+		>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/boundry"
+		></ImageView>
+		
+		<Button
+    		android:id="@+id/button_newbook"
+    		android:background="@null"
+    		android:layout_width="60px"
+    		android:layout_height="63px"
+    		android:textColor="@drawable/font_color"
+    		android:text="+"
+    		android:textStyle="bold"
+    		android:textSize="25sp"
+    	></Button>
+    	
+    	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/boundry"
+		></ImageView>
+	</LinearLayout>		
+		
+</FrameLayout>

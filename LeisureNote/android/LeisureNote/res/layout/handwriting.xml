@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/22 -->
+<!-- Description:画板笔记页面的布局 -->
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/drawboard_background"
+	android:id="@+id/frameHandwritingLayout"
+	android:padding="5dp"
+>	
+	<TextView
+		android:textColor="@color/right_green"
+		android:textSize="21dp"
+		android:text="0/25"
+		android:layout_gravity="top|right"
+		android:layout_marginTop="20px"
+		android:layout_marginRight="5px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/handTextLimit"
+	></TextView>
+	<GridView
+		android:id="@+id/writeGrid"
+		android:layout_width="fill_parent"
+		android:layout_height="800px"
+		android:layout_gravity="top|center"
+		android:gravity="center"
+		android:numColumns="auto_fit"
+		android:horizontalSpacing="3px"
+		android:verticalSpacing="0px"
+		android:columnWidth="65px"
+		android:stretchMode="spacingWidthUniform"
+		android:scrollingCache="true"
+		
+	></GridView>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center"
+		android:id="@+id/writeToolsLayout"
+		android:layout_marginBottom="10px"
+		
+	>
+		
+
+
+	<LinearLayout
+		android:layout_alignParentBottom="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center"
+		android:orientation="horizontal"
+		android:padding="2dp"
+		android:layout_marginBottom="10px"
+		android:layout_marginTop="3px"
+		android:background="@drawable/drawboard_background"
+		android:id="@+id/writeButtonBar"
+	>
+		<HorizontalScrollView
+			android:layout_width="432px"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center"
+		>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="horizontal"
+			>
+				<Button
+					android:id="@+id/writeButton_backspace"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_backspace_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+				    android:id="@+id/writeButton_space"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_space_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+					android:id="@+id/writeButton_color"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_color_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+					android:id="@+id/writeButton_enter"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_enter_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+					android:id="@+id/writeButton_clean"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_ashbin_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				
+			</LinearLayout>
+		
+		
+		</HorizontalScrollView>
+		<Button
+			android:id="@+id/writeButton_save"
+			android:layout_width="108px"
+			android:layout_height="50px"
+			android:background="@color/right_green"
+			android:text="保存"
+			android:textColor="@color/white"
+		></Button>
+	</LinearLayout>
+	
+
+	
+	<LinearLayout
+	
+		android:layout_above="@id/writeButtonBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		
+		android:orientation="vertical"
+		android:layout_centerHorizontal="true"
+	>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/frameForWriteboard"
+			android:layout_gravity="center"
+			android:layout_marginBottom="10px"
+		></LinearLayout>
+		<include 
+			layout="@layout/color_choose_write"	
+			
+		></include>	
+		
+	</LinearLayout>
+
+	
+</RelativeLayout>
+</FrameLayout>

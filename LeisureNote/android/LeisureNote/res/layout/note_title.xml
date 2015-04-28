@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/20 -->
+<!-- Description:注册页面布局 -->
+
+<LinearLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/title"
+     android:orientation="horizontal"
+>
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/boundry"
+		android:layout_marginLeft="55px"
+	></ImageView>
+	
+	<HorizontalScrollView
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="5px"
+		
+			
+		>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal|left"
+			>
+				<Spinner
+			   		android:id="@+id/spinner_chooseBook"
+			   		android:layout_width="wrap_content"
+			   		android:layout_height="wrap_content"
+			   		android:layout_gravity="center_vertical|left"
+			   		android:background="@drawable/spinner_selector"	
+			   		android:gravity="left"		   		
+			  	 >
+		   		</Spinner>	
+				
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/boundry"
+					android:layout_marginLeft="5px"
+				></ImageView>
+				
+				<Button
+	    		android:id="@+id/button_mic"
+	    		android:background="@drawable/mic"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		></Button>
+	    		
+	    		<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/boundry"
+				></ImageView>
+				
+				<Button
+	    		android:id="@+id/button_play"
+	    		android:background="@drawable/button_play_selector"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		></Button>
+	    		
+	    		<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/boundry"
+				></ImageView>
+				
+				<Button
+		    		android:id="@+id/button_append"
+		    		android:background="@drawable/append"
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    	></Button>
+		    	
+		    	<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/boundry"
+				></ImageView>
+				
+				<Button
+		    		android:id="@+id/button_hand"
+		    		android:background="@drawable/button_hand_selector"
+		    		android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    	></Button>
+		    	
+		    	<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/boundry"
+				></ImageView>
+		
+			</LinearLayout>
+		</HorizontalScrollView>
+</LinearLayout>

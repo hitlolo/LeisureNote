@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:padding="8dp"
+     
+     >
+     
+     
+     <FrameLayout
+		android:background="@drawable/back_recording"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|center"
+		android:layout_marginTop="50px"
+		android:id="@+id/back_recording"
+	>
+		<TextView
+			
+			android:id="@+id/text_recordingTime"
+			android:textColor="@color/white"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center"
+		></TextView>
+		
+	</FrameLayout>
+	<Button
+		android:id="@+id/button_startRecording"
+		android:layout_width="170px"
+		android:layout_height="50px"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="40px"
+		android:textColor="@color/white"
+		android:text="⊙"
+		android:background="@drawable/button_record_selector"
+	></Button>
+	
+	<Button
+		android:id="@+id/button_stopRecording"
+		android:layout_width="170px"
+		android:layout_height="50px"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20px"
+		android:textColor="@color/white"
+		android:text="■"
+		android:background="@drawable/button_stop_selector"
+	></Button>
+	
+	<Button
+		android:id="@+id/button_deleteRecording"
+		android:layout_width="170px"
+		android:layout_height="50px"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20px"
+		android:textColor="@color/white"
+		android:text="×"
+		android:background="@drawable/button_delete_selector"
+	></Button>
+	
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:padding="8dp"
+     
+     
+     >
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:layout_marginTop="10px"
+ 
+    >
+    	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/white"
+    		android:text="00:00"
+    		android:layout_gravity="left"
+    		android:id="@+id/text_started"
+    	></TextView>
+    	
+    	<TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/white"
+    		android:text="00:00"
+    		android:layout_marginLeft="230px"
+    		android:layout_gravity="right"
+    		android:id="@+id/text_ended"
+    	></TextView>
+    
+    </LinearLayout>
+    
+    <SeekBar 
+	     android:id="@+id/player_seekbar"  
+         android:layout_width="330px"  
+         android:layout_height="wrap_content"  
+         android:layout_gravity="center_horizontal"
+         android:progressDrawable="@drawable/seekbar_style"      
+         android:progress="0"          
+         android:secondaryProgress="0"  	    	    
+    ></SeekBar>
+    
+    
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:layout_marginTop="10px"
+ 
+    >
+	    <Button
+	    	android:layout_marginLeft="10px"
+	    	android:layout_width="150px"
+	    	android:layout_height="50px"
+	    	android:background="@drawable/round_corner_gray"
+	    	android:text=">"
+	    	android:textColor="@color/white"
+	    	android:id="@+id/button_player_start"
+	    ></Button>
+	    
+	    <Button
+	    	android:layout_width="150px"
+	    	android:layout_height="50px"
+	    	android:background="@drawable/round_corner_gray"
+	    	android:text="■"
+	    	android:textColor="@color/white"
+	    	android:layout_marginLeft="20px"
+	    	android:id="@+id/button_player_stop"
+	    ></Button>
+    </LinearLayout> 
+     
+     
+     <Button
+	    	android:layout_width="325px"
+	    	android:layout_height="50px"
+	    	android:background="@drawable/round_corner_gray"
+	    	android:text="→⊙"
+	    	android:textColor="@color/white"
+	    	android:layout_marginTop="20px"
+	    	android:id="@+id/button_reRecord"
+	    	android:layout_gravity="center_horizontal"
+	 ></Button>
+     
+	
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center_horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<LinearLayout 
+	     android:layout_width="460px"
+	     android:layout_height="158px"
+	     android:orientation="vertical"
+	     android:paddingLeft="10dp"
+	     android:paddingTop="7dp"
+	     android:paddingRight="10dp"
+	     android:background="@drawable/list_item_background"
+	     android:clipChildren="true"
+	     android:clipToPadding="true"
+	    
+	     >
+	
+	     <TextView 
+	     	 android:id="@+id/list_title"
+	         android:textSize="18sp"
+	         android:textColor="@color/gray"
+	         android:textStyle="bold"
+	         android:layout_width="440px"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_horizontal"
+	         />
+	
+	     <TextView 
+	     	 android:id="@+id/list_content"
+	         android:textSize="16sp"
+	         android:textColor="@color/blue_iron"
+	         android:layout_width="440px"
+	         android:layout_height="60px"
+	     	 android:ellipsize="end"
+	     />
+	     
+	       <LinearLayout
+	     	android:layout_width="match_parent"
+	     	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:layout_gravity="right"
+	    	
+	   		 > 
+	  
+	     	<ImageView
+	     		android:id="@+id/list_sound_item"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:background="@drawable/miclogo"
+	     		android:layout_marginLeft="10px"
+	     	
+	     	></ImageView>
+	     	<ImageView
+	     		android:id="@+id/list_image_item"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:background="@drawable/piclogo"
+	     		android:layout_marginLeft="10px"
+	     	></ImageView>
+	     	<ImageView
+	     		android:id="@+id/list_hand_item"
+	     		android:layout_width="wrap_content"
+	     		android:layout_height="wrap_content"
+	     		android:background="@drawable/handlogo"
+	     		android:layout_marginLeft="10px"
+	     	></ImageView>
+	     	
+	     	
+	     	
+	     </LinearLayout>
+	     
+	      
+	</LinearLayout>
+	
+	<TextView 
+	     	 android:id="@+id/list_time"
+	         android:textSize="16sp"
+	         android:textColor="@color/gray"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_gravity="bottom|center"
+	         />
+
+</LinearLayout>

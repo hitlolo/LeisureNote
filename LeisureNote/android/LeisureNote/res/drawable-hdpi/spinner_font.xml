@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@android:id/text1"
+  
+     android:singleLine="true"
+     android:layout_width="200px"
+     android:layout_height="wrap_content"
+     android:ellipsize="end"
+     android:textColor="@color/white"
+     android:textSize="18sp"
+	 android:gravity="left"
+	 android:textStyle="bold"
+	 android:focusable="true"
+/>

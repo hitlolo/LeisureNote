@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/13 -->
+<!-- Description:注册页面布局 -->
+
+<LinearLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:background="@drawable/background"
+>
+	<!-- 用户名输入 -->
+
+	<TextView
+		android:text="@string/username"
+		android:textColor="@color/white"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50px"
+		android:layout_marginLeft="10px"			
+	></TextView>
+		
+	<LinearLayout
+		 android:orientation="horizontal"
+    	 android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+	>
+		<EditText
+			android:layout_width="340px"
+	   		android:layout_height="wrap_content"
+	   		android:id="@+id/registerUsername" 		
+	   		android:singleLine="true"
+	   		android:textColor="@color/light_green"
+		></EditText>
+		
+		<!-- 可隐藏提示信息 -->
+		<TextView 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:id="@+id/textRegisterUserError" 
+			android:text="@string/hint_usernameError" 
+			android:visibility="gone"
+					
+		></TextView>
+	
+	</LinearLayout>
+	
+	
+	<!-- 密码输入 -->
+	<TextView
+		android:text="@string/password"
+		android:textColor="@color/white"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10px"
+		
+		
+	></TextView>
+	
+		
+	<LinearLayout
+		 android:orientation="horizontal"
+    	 android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+	>
+		<EditText
+			android:layout_width="340px"
+	   		android:layout_height="wrap_content"
+	   		android:id="@+id/registerPassword" 		
+	   		android:singleLine="true"
+	   		android:password="true"
+	   		android:textColor="@color/light_green"
+	   		
+		></EditText>
+		
+		<!-- 可隐藏提示信息 -->
+		<TextView
+			android:text="@string/hint_passwordError"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/textRegisterPwdError" 
+			android:visibility="gone"
+			
+		></TextView>
+	
+	</LinearLayout>
+	
+	<!-- 密码确认输入 -->
+	
+	<TextView
+		android:text="@string/passwordConfirm"
+		android:textColor="@color/white"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10px"
+		
+	></TextView>
+	
+		
+	<LinearLayout
+		 android:orientation="horizontal"
+    	 android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+	>
+		<EditText
+			android:layout_width="340px"
+	   		android:layout_height="wrap_content"
+	   		android:id="@+id/registerPasswordConfirm" 		
+	   		android:singleLine="true"
+	   		android:password="true"
+	   		android:textColor="@color/light_green"
+		></EditText>
+		
+		<!-- 可隐藏提示信息 -->
+		<TextView
+			android:text="@string/hint_passwordConfirmError"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/textRegisterPwdConError" 
+			android:visibility="gone"
+			
+		></TextView>
+	
+	</LinearLayout>
+	
+	<!-- 个性用户名输入 -->
+
+	<TextView
+		android:text="@string/nickName"
+		android:textColor="@color/white"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10px"
+		
+	></TextView>
+			
+	<LinearLayout
+		 android:orientation="horizontal"
+    	 android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+	>
+		<EditText
+			android:layout_width="340px"
+	   		android:layout_height="wrap_content"
+	   		android:id="@+id/registerNickName" 		
+	   		android:singleLine="true"
+	   		android:textColor="@color/light_green"
+		></EditText>
+		
+		<!-- 可隐藏提示信息 -->
+		<TextView
+			android:text="@string/hint_nickNameError"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/textRegisterNickNameError" 
+			android:visibility="gone"
+			
+		></TextView>
+	
+	</LinearLayout>
+	
+	<!-- 个性用户名提示 -->
+	<!-- 可隐藏提示信息 -->
+	<TextView
+		android:text="@string/hint_nickName"
+		android:textColor="@color/light_green"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30px"
+		android:id="@+id/textRegisterNickNameHint" 
+		android:visibility="gone"
+	></TextView>
+	
+	<!-- 以下为性别等其他信息注册区 -->
+	
+	<LinearLayout
+		 android:orientation="horizontal"
+    	 android:layout_width="fill_parent"
+    	 android:layout_height="wrap_content"
+	>
+	
+	<RadioGroup
+		android:id="@+id/genderRadioGroup"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"	
+		android:orientation="horizontal"
+		android:layout_marginLeft="6px"
+		android:checkedButton="@+id/genderBoyButton"
+	>
+		<RadioButton
+			android:checked="true"
+			android:text="男生"
+			android:textColor="@drawable/radio_button_font"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4px"
+			android:id="@id/genderBoyButton"
+			android:button="@drawable/radio_button"
+		></RadioButton>
+		
+		<RadioButton
+			android:checked="false"
+			android:text="女生"
+			android:textColor="@drawable/radio_button_font"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4px"
+			android:id="@+id/genderGirlButton"
+			android:button="@drawable/radio_button"
+		></RadioButton>
+		
+		<RadioButton
+			android:checked="false"
+			android:text="不明"
+			android:textColor="@drawable/radio_button_font"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4px"
+			android:id="@+id/genderNoneButton"
+			android:button="@drawable/radio_button"
+		></RadioButton>
+		
+	</RadioGroup>
+	
+	
+	</LinearLayout>
+	
+	
+	<!-- 个性签名输入 -->
+
+	<TextView
+		android:text="@string/personalTag"
+		android:textColor="@color/white"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10px"
+		
+	></TextView>
+			
+
+	<EditText
+			android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"
+	   		android:id="@+id/registerPersonalTag" 		
+	   		android:singleLine="true"
+	   		android:textColor="@color/light_green"
+	></EditText>
+		
+	
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+	>
+		
+		<!-- 可隐藏提示信息    居中-->
+		<TextView 
+			android:layout_width="wrap_content" 
+			android:textColor="@color/peach_red" 
+			android:id="@+id/textRegisterPersonalTag" 
+			android:text="@string/hint_personalTag" 
+			android:layout_height="wrap_content"
+			
+			android:visibility="gone"
+		>
+		</TextView>
+		
+
+	</RelativeLayout>
+	
+	
+	<Button
+		android:text="注册"
+		android:id="@+id/registerButton"
+		android:textColor="@drawable/font_color_register"
+		android:background="@color/blue_iron"
+		android:layout_width="460px"
+		android:layout_height="60px"
+		android:layout_gravity="center"
+		android:layout_marginTop="40px"
+	>
+	</Button>
+	
+	
+	
+
+</LinearLayout>

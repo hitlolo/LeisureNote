@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    gravity="center"
+    >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:layout_gravity="center"
+        >
+		 
+        <TextView
+
+            style="@style/DialogText.Title"
+            android:id="@+id/dialog_title"
+            android:paddingRight="8dip"
+            android:paddingLeft="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+           
+           />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        gravity="center"
+         >
+        
+        <TextView
+            style="@style/DialogText"
+            android:id="@+id/dialog_message"
+            android:padding="8dip"
+            android:layout_width="130px"
+            android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+            android:gravity="center"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        gravity="center"
+        >
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_marginTop="10px"
+            android:layout_width="140px"
+            android:layout_weight="1"
+            android:layout_height="50px"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:background="@drawable/round_corner_pink"
+            android:layout_gravity="center"
+            />
+       	<Button
+            android:id="@+id/neutralButton"
+             android:layout_marginTop="10px"
+            android:layout_width="140px"
+            android:layout_weight="1"
+            android:layout_height="50px"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:background="@drawable/round_corner_yellow"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_marginTop="10px"
+            android:layout_width="140px"
+            android:layout_weight="1"
+            android:layout_height="50px"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:background="@drawable/round_corner_gray"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

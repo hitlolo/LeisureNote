@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/22 -->
+<!-- Description:新增笔记页面的布局 -->
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/transparent_black"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/recorederFrame"
+	android:visibility="invisible"
+>
+	<FrameLayout
+
+		android:background="@drawable/round_corner"
+		android:layout_width="400px"
+		android:layout_height="250px"
+		android:layout_gravity="center"
+		android:focusable="true"
+		android:clickable="true"
+	    >
+	   
+	   <LinearLayout
+	   		android:orientation="vertical"
+	   		android:background="@color/transparent_background"
+	   		android:layout_width="380px"
+	   		android:layout_height="230px"
+	   		android:layout_gravity="center"
+	   		android:id="@+id/recorderLayout"
+	   >
+	   <TextView
+	   		android:text="录音笔记"
+	   		android:textColor="@color/white"
+	   		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:layout_gravity="center"
+	   ></TextView>
+	   
+		   <!-- 分割线 -->
+		   <LinearLayout
+		   		android:layout_width="360px"
+		   		android:layout_height="2px"
+		   		android:background="@color/light_green"
+		   		android:layout_gravity="center"
+		   >
+		   </LinearLayout>
+		 
+		   <LinearLayout
+		   		android:orientation="horizontal"
+		   		android:layout_width="360px"
+		   		android:layout_height="90px"
+		   		android:layout_gravity="center"
+		   		android:layout_marginTop="3px"
+		   		android:id="@+id/layout_RecordeDelete"
+		   		android:clickable="true"
+		   	
+		   >
+		       
+		   	 	<ImageView
+			   		android:src="@drawable/micphone"
+			   		android:layout_width="50px"
+			   		android:layout_height="match_parent"
+			   		android:layout_gravity="center"
+			   		android:layout_marginLeft="20px"
+		   		></ImageView>
+		   		
+		   		<LinearLayout
+		   			android:layout_marginLeft="10px"
+		   			android:orientation="vertical"
+		   			android:layout_width="220px"
+		   			android:layout_height="match_parent"
+		   			
+		   		>
+			   		<LinearLayout
+			   			android:orientation="horizontal"
+			   			android:layout_width="wrap_content"
+			   			android:layout_height="wrap_content"
+			   		>	   		
+					   		<TextView
+					   			android:text="名称:"
+					   			android:layout_width="match_parent"
+					   			android:layout_height="wrap_content"
+					   			android:textColor="@color/white"
+					   		></TextView>
+					   		
+					   	<ScrollView
+			   				android:layout_width="wrap_content"
+			   				android:layout_height="32px"
+			   			>
+					   		<TextView
+					   			android:id="@+id/textRecordTitle"
+					   			android:text="暂无录音"
+					   			android:layout_width="match_parent"
+					   			android:layout_height="wrap_content"
+					   			android:textColor="@color/white"
+					   		></TextView>
+				   		</ScrollView>
+			   		</LinearLayout>
+			   		<LinearLayout
+			   			android:orientation="horizontal"
+			   			android:layout_width="wrap_content"
+			   			android:layout_height="wrap_content"
+			   			
+			   		>
+				   		<TextView
+				   			android:text="时间:"
+				   			android:layout_width="match_parent"
+				   			android:layout_height="wrap_content"
+				   			android:textColor="@color/white"
+				   		
+				   		></TextView>
+				   		<ScrollView
+			   				android:layout_width="wrap_content"
+			   				android:layout_height="32px"
+			   			>
+					   		<TextView
+					   			android:text="暂无录音"
+					   			android:id="@+id/textRecordTime"
+					   			android:layout_width="match_parent"
+					   			android:layout_height="wrap_content"
+					   			android:textColor="@color/white"
+					   		
+					   		></TextView>
+				   		</ScrollView>
+			   		</LinearLayout>
+			   		<LinearLayout
+			   			android:orientation="horizontal"
+			   			android:layout_width="wrap_content"
+			   			android:layout_height="wrap_content"			   			
+			   		>
+				   		<TextView
+				   			android:text="格式:"
+				   			android:layout_width="match_parent"
+				   			android:layout_height="wrap_content"
+					   		android:textColor="@color/white"
+				   		></TextView>
+				   		<TextView
+				   			android:text="暂无录音"
+				   			android:id="@+id/textRecordFormat"
+				   			android:layout_width="match_parent"
+				   			android:layout_height="wrap_content"
+				   		    android:textColor="@color/white"
+				   		></TextView>
+			   		</LinearLayout>  		
+		   		</LinearLayout>
+		   		<!-- 信息栏 -->
+		   		<Button
+		   			android:layout_gravity="center"
+		   			android:layout_width="50px"
+		   			android:layout_height="40px"
+		   			android:background="@drawable/button_play"
+		   			android:id="@+id/buttonRecorderPlay"
+		   		></Button>
+		   	</LinearLayout>
+		   	
+		   <!-- 分割线 -->
+		   <LinearLayout
+		   		android:layout_marginTop="10px"
+		   		android:layout_width="360px"
+		   		android:layout_height="2px"
+		   		android:background="@color/light_green"
+		   		android:layout_gravity="center"
+		   >
+		   </LinearLayout>
+		  
+		  <LinearLayout
+				android:layout_width="340px"
+				android:layout_height="60px"
+				android:layout_gravity="center"
+				android:orientation="horizontal"
+				android:background="@drawable/round_corner_green"
+				android:layout_marginTop="20px"
+				android:padding="10px"
+			>	  
+			  <Button
+			  		android:text="按下录音"
+			  		android:textColor="@color/white"
+			  		
+			  		android:layout_gravity="center"
+			  		android:layout_width="match_parent"
+			  		android:layout_height="match_parent"
+			  		android:background="@drawable/button_recorder"
+			  		android:id="@+id/buttonRecorder"
+			  ></Button>
+	    	</LinearLayout>
+	    	
+	   </LinearLayout> 
+	</FrameLayout>
+</FrameLayout>

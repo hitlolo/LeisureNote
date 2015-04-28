@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/22 -->
+<!-- Description:新增笔记页面的布局 -->
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/frameMainAdd"
+>
+	
+	<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	
+	    >
+		<!-- 添加view -->
+		    <LinearLayout 
+				xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/note_background1"
+			    >
+			     <EditText
+			    	android:id="@+id/add_noteTitle"
+			    	android:hint="笔记标题"
+			    	android:layout_width="470px"
+			    	android:layout_height="wrap_content"
+			    	android:singleLine="true"
+			    	android:background="@null"
+			    	android:textSize="19dp"
+			    	android:textColor="@color/light_orange"
+			    	android:layout_marginLeft="45px"
+			    	android:layout_marginTop="20px" 
+			    ></EditText>
+	     
+	   			 <!-- 支持文本域的滚动显示 -->
+			    <ScrollView
+			    	android:layout_width="match_parent"
+			    	android:layout_height="780px" 	
+			    	android:layout_marginLeft="35px"
+			    	
+			    >
+			    	<EditText
+				    	android:id="@+id/add_noteContent"
+				    	android:hint="输入您的笔记"
+				    	android:layout_width="fill_parent"
+				    	android:layout_height="fill_parent"
+				    	android:lines="30"
+				    	android:gravity="top"
+				    	android:background="@null"
+				    	android:bufferType="editable"
+				    	android:padding="10px"
+			
+				    	
+			    	></EditText>
+	   		 </ScrollView>
+	    </LinearLayout>
+	</LinearLayout>
+</FrameLayout>

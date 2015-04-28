@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/13 -->
+<!-- Description:注册页面布局 -->
+
+<LinearLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:orientation="vertical"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/tool_board"
+>	
+	<Button
+		android:background="@drawable/button_back_selector"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="50px"
+		android:layout_marginLeft="10px"
+		android:id="@+id/drawButton_back"
+	></Button>
+	
+
+	<Button
+		android:background="@drawable/button_forward_selector"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20px"
+		android:layout_marginLeft="10px"
+		android:id="@+id/drawButton_forward"
+	></Button>
+	
+	<Button
+		android:background="@drawable/button_pen_selector"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20px"
+		android:layout_marginLeft="10px"
+		android:id="@+id/drawButton_pen"
+	></Button>
+	
+	<Button
+		android:background="@drawable/button_eraser_selector"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20px"
+		android:layout_marginLeft="10px"
+		android:id="@+id/drawButton_eraser"
+	></Button>
+	
+	<Button
+		android:background="@drawable/button_color_selector"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20px"
+		android:layout_marginLeft="10px"
+		android:id="@+id/drawButton_color"
+	></Button>
+	
+	<Button
+		android:background="@drawable/button_ashbin_selector"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20px"
+		android:layout_marginLeft="10px"
+		android:id="@+id/drawButton_clean"
+	></Button>
+	
+	<ImageView
+		android:src="@drawable/boundry_row"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="10px"
+		android:layout_marginLeft="10px"
+	></ImageView>
+	
+	<Button
+		android:background="@drawable/cancel_simple"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="10px"
+		android:layout_marginLeft="10px"
+		android:id="@+id/drawButton_cancel"
+	></Button>
+
+</LinearLayout>

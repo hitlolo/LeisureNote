@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/13 -->
+<!-- Description:字符串资源-->
+
+<resources>
+    <string name="hello">Hello World, LeisureNote!</string>
+    <string name="app_name">LeisureNote</string>
+    <string name="username">电子邮件：</string>
+    <string name="password">密码：</string>
+    <string name="passwordConfirm">密码确认：</string>
+    <string name="hint_usernameError">× 用户名应为邮箱地址</string>
+    <string name="hint_passwordError">× 密码过于简短</string>
+    <string name="hint_passwordConfirmError">× 密码输入不一致</string>
+    <string name="hint_usernameEmpty">× 用户名不能为空</string>
+    <string name="hint_passwordEmpty">× 密码不能为空</string>
+    <string name="nickName">个性用户名：</string>
+    <string name="hint_nickName">√为自己取一个酷酷的名字吧</string>
+    <string name="hint_nickNameEmpty">× 称号不能为空</string>
+    <string name="hint_nickNameError">× 该称号已被占用</string>
+    <string name="user_registed">× 该用户已注册</string>
+    <string name="personalTag">个性签名：</string>
+    <string name="hint_personalTagEmpty">× 为自己来一个亮眼的个性标签吧</string>
+    <string name="hint_personalTag">√果然亮眼</string>
+    <string name="hint_correct">√正确</string>
+</resources>

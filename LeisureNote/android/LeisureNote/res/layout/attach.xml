@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<RelativeLayout 
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:padding="8dp"
+     android:layoutAnimation="@anim/layout_popup_anim"
+     android:persistentDrawingCache="animation|scrolling" 
+     android:focusableInTouchMode="true"
+     android:clipChildren="false"
+     
+     
+     >
+     <Button
+
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:layout_centerHorizontal="true"
+     	android:background="@drawable/gallery_selector"    
+     	android:layout_marginTop="200px"	
+     	android:id="@+id/button_gallery"
+     ></Button>
+     
+     <Button
+			android:layout_marginTop="40px"
+	     	android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:layout_below="@id/button_gallery"
+	     	android:background="@drawable/camera_selector"    
+	     	android:layout_marginLeft="70px"
+	     	android:id="@+id/button_camera"	
+     	></Button>
+     	
+     	
+     	
+     	<Button
+ 			android:layout_marginTop="40px"
+	     	android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:layout_below="@id/button_gallery"
+	     	android:layout_toRightOf="@id/button_camera"
+	     	android:background="@drawable/draw_selector"  
+	     	android:layout_marginLeft="60px"	
+	     	android:id="@+id/button_draw"  	
+     	></Button>
+		
+</RelativeLayout>

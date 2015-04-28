@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources  
+	xmlns:android ="http://schemas.android.com/apk/res/android"> 
+
+	<style  name ="CustomWindowTitleBackground"> 
+	      <item  name ="android:windowTitleBackgroundStyle">@null</item> 
+	</style> 
+	
+	<style name ="title"  parent ="android:Theme"> 
+	      <item  name ="android:windowTitleSize">65px</item> 
+	      <item  name ="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground 
+	      </item> 
+	</style> 
+	
+	<style name="PopupRecordAnimation" parent="android:Animation" mce_bogus="1">        
+		<item name="android:windowEnterAnimation">@anim/popup_record_enter</item>   
+        <item name="android:windowExitAnimation">@anim/popup_record_exit</item>   
+    </style> 
+    
+    <style name="PopupPlayAnimation" parent="android:Animation" mce_bogus="1">        
+		<item name="android:windowEnterAnimation">@anim/popup_play_enter</item>   
+        <item name="android:windowExitAnimation">@anim/popup_play_exit</item>   
+    </style> 
+    
+    <style name="PopupToolsAnimation" parent="android:Animation" mce_bogus="1">        
+		<item name="android:windowEnterAnimation">@anim/popup_tools_enter</item>   
+        <item name="android:windowExitAnimation">@anim/popup_tools_exit</item>   
+    </style> 
+    
+    <style name="PopupAttachAnimation" parent="android:Animation" mce_bogus="1">        
+		<item name="android:windowEnterAnimation">@anim/popup_enter</item>   
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>   
+    </style> 
+    
+    <style name="PopupNewBookAnimation" parent="android:Animation" mce_bogus="1">        
+		<item name="android:windowEnterAnimation">@anim/popup_newbook_enter</item>   
+        <item name="android:windowExitAnimation">@anim/popup_newbook_exit</item>   
+    </style> 
+    
+    
+    
+    <!-- 自定义Dialog -->
+     <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    
+    <style name="DialogText">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        
+    </style>
+    <style name="DialogText.Title">
+    	<item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+        
+    </style>
+    
+    
+    
+</resources>

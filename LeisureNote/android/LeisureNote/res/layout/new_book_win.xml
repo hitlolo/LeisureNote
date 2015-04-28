@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout   
+         xmlns:android="http://schemas.android.com/apk/res/android"   
+         android:layout_height="wrap_content"   
+         android:layout_width="wrap_content"
+         android:paddingTop="40px"
+         android:paddingLeft="10px"
+         android:paddingRight="10px"
+         android:layout_gravity="center_horizontal"
+         android:orientation="horizontal"
+         android:background="@drawable/newbook_background"
+         
+         >  
+		
+		<EditText
+			android:layout_width="380px"
+			android:layout_height="40px"
+			android:singleLine="true"
+			android:hint="笔记本名称"
+			android:gravity="center"
+			android:background="@drawable/font_background"
+			android:id="@+id/edit_bookname"
+			android:textColor="@color/white"
+			
+		></EditText>
+		
+		<Button
+			android:layout_marginLeft="10px"
+			android:layout_height="40px"
+			android:layout_width="120px"
+			android:background="@drawable/round_corner_yellow"
+			android:text="Save"
+			android:textColor="@color/white"
+			android:textStyle="bold"
+			android:id="@+id/button_book_save"
+		></Button>
+
+</LinearLayout>

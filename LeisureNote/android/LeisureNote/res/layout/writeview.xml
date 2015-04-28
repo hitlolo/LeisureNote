@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/4/8 -->
+<!-- Description:手写笔记选择页面的布局 -->
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/transparent_black"
+	android:id="@+id/writeFrame"
+	android:visibility="invisible"
+
+    >
+    <FrameLayout
+  	  	android:background="@drawable/round_corner"
+		android:layout_width="400px"
+		android:layout_height="510px"		
+		android:layout_gravity="center"
+		android:focusable="true"
+		android:clickable="true"
+		
+    >
+    	 <LinearLayout
+		   		android:orientation="vertical"
+		   		android:background="@color/transparent_background"
+		   		android:layout_width="380px"
+		   		android:layout_height="490px"
+		   		android:layout_gravity="center"
+		   
+	  		 >
+	   			<TextView
+			   		android:text="手写笔记"
+			   		android:textColor="@color/white"
+			   		android:layout_width="wrap_content"
+			   		android:layout_height="wrap_content"
+			   		android:layout_gravity="center"
+			   	></TextView>
+		   
+			   <!-- 分割线 -->
+			   <LinearLayout
+			   		android:layout_width="360px"
+			   		android:layout_height="2px"
+			   		android:background="@color/light_green"
+			   		android:layout_gravity="center"
+			   		android:layout_marginTop="5px"
+			   >
+			   </LinearLayout>
+			   
+			   
+			   	<GridView
+			   		android:layout_marginTop="5px"
+					android:id="@+id/handwriteGrid"
+					android:layout_width="320px"
+					android:layout_height="370px"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:numColumns="auto_fit"
+					android:horizontalSpacing="3px"
+					android:columnWidth="40px"
+					android:stretchMode="spacingWidthUniform"
+					android:background="@drawable/imageview_background"
+					
+				></GridView>
+				
+
+			<!-- 分割线 -->
+			<LinearLayout
+			   	android:layout_width="360px"
+			   	android:layout_height="2px"
+			   	android:background="@color/light_green"
+			   	android:layout_gravity="center"
+			   	android:layout_marginTop="5px"
+			>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="310px"
+				android:layout_height="60px"
+				android:layout_gravity="center"
+				android:orientation="horizontal"
+				android:background="@drawable/round_corner_green"
+				android:layout_marginTop="5px"
+				android:padding="10px"
+			>
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@drawable/button_green_orange"
+					android:textColor="@color/white"
+					android:text="手写"
+					android:layout_gravity="left|center"
+					android:id="@+id/buttonHandWrite"
+				></Button>
+
+			
+			</LinearLayout><!-- 按钮框 -->
+				   
+		</LinearLayout><!-- 半透明内框 -->
+    </FrameLayout><!-- 圆角背景 -->
+    
+    <ImageView
+    	android:id="@+id/preViewImage"
+    	android:adjustViewBounds="true"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:visibility="invisible"
+    	android:background="@drawable/imageview_background"
+    ></ImageView>
+</FrameLayout><!-- 蒙板 -->

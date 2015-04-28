@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/13 -->
+<!-- Description:登陆页面布局 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    >
+    <LinearLayout
+    	android:orientation="vertical"
+    	android:layout_width="match_parent"
+    	android:layout_height="400px"
+    	android:layout_marginTop="100px"
+    	android:background="@color/transparent_background"
+    	>
+    
+	    <TextView
+	    	android:text="@string/username"
+	    	android:id="@+id/TextView"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="@color/white"
+	    	android:layout_marginLeft="10px"	
+	    />
+	    
+	   	<EditText
+	   		android:layout_width="match_parent"
+	   		android:layout_height="wrap_content"
+	   		android:id="@+id/userEdit" 		
+	   		android:singleLine="true"
+	   	></EditText>
+	   	
+	   	<TextView
+	    	android:text="× 输入格式有误"
+	    	android:id="@+id/userInputError"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:textColor="@color/peach_red"
+	    	android:textStyle="normal"
+	    	android:textSize="13dp"
+	    	android:visibility="gone"
+	    />
+
+	    
+	   	
+	   	<TextView
+	   		android:layout_marginTop="10px"
+	   		android:text="@string/password"
+	   		android:id="@+id/TextView"
+	   		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	    	android:textColor="@color/white"
+	    	android:layout_marginLeft="10px"	
+	   	>
+	   	</TextView>
+	   	
+	   	<EditText
+	   		android:layout_width="match_parent"
+	   		android:layout_height="wrap_content"
+	   		android:id="@+id/passwordEdit"
+	   		android:password="true"
+	   		android:singleLine="true"
+	   	>
+	   	</EditText>
+	   	
+	   	<TextView
+	    	android:text="× 密码输入错误"
+	    	android:id="@+id/passwordInputError"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:textColor="@color/peach_red"
+	    	android:textStyle="normal"
+	    	android:textSize="13dp"
+			android:visibility="gone"
+	    />
+	   	
+	   	<!--这是输入栏下嵌套的横向按钮栏-->
+	 		<LinearLayout
+	 			android:orientation="horizontal"
+	 			android:layout_width="fill_parent"
+	 			android:layout_height="wrap_content"
+	 			android:layout_marginTop="30px"
+	 		>
+	 		
+	 			<Button
+		 			android:layout_marginLeft="20px"
+		 			android:layout_width="200px"
+		 			android:layout_height="60px"
+		 			android:id="@+id/buttonLogin"
+		 			android:text="登录"
+		 			android:textColor="@drawable/font_color"	
+		 			android:textStyle="bold"
+		 			android:textSize="15dp"	
+		 			android:background="@color/blue_iron"	
+		 		>
+		 		</Button>
+		 		<Button
+		 			android:layout_marginLeft="100px"
+					android:layout_marginRight="20px"
+		 			android:layout_width="200px"
+		 			android:layout_height="60px"
+		 			android:id="@+id/buttonRegiste"
+		 			android:text="注册"
+		 			android:textStyle="bold"
+		 			android:textSize="15dp"
+		 			android:textColor="@drawable/font_color"	
+		 			android:background="@color/blue_iron"	
+		 		>
+		 		</Button>
+		 	</LinearLayout>
+		 	<!-- Button栏结束 -->
+		 	<CheckBox
+		 		android:checked="false"
+		 		android:layout_width="wrap_content"
+		 		android:layout_height="wrap_content"
+		 		android:text="记住我,下次自动填写"
+		 		android:textColor="@color/white"
+		 		android:layout_gravity="center"
+		 		android:layout_marginTop="20px"
+		 		android:id="@+id/checkboxRememberME"
+		 	>
+		 	</CheckBox>
+		 	
+ 	</LinearLayout>
+ 	
+ 	
+</LinearLayout>

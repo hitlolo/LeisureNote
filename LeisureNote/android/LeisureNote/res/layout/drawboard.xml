@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/22 -->
+<!-- Description:画板笔记页面的布局 -->
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/drawboard_background"
+	android:id="@+id/frameDrawLayout"
+	android:padding="5dp"
+>	
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center"
+		android:id="@+id/drawToolsLayout"
+	>
+		
+
+
+	<LinearLayout
+		android:layout_alignParentBottom="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center"
+		android:orientation="horizontal"
+		android:padding="2dp"
+		android:layout_marginBottom="10px"
+		android:layout_marginTop="3px"
+		android:background="@drawable/drawboard_background"
+		android:id="@+id/drawButtonBar"
+	>
+		<HorizontalScrollView
+			android:layout_width="432px"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center"
+		>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="horizontal"
+			>
+				<Button
+					android:id="@+id/drawButton_back"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_back_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+				    android:id="@+id/drawButton_forward"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_forward_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+					android:id="@+id/drawButton_color"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_color_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+					android:id="@+id/drawButton_pen"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_pen_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+					android:id="@+id/drawButton_eraser"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_eraser_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+					android:id="@+id/drawButton_clean"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/button_ashbin_selector"
+				></Button>
+				<LinearLayout
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+			
+			</LinearLayout>
+		
+		
+		</HorizontalScrollView>
+		<Button
+			android:id="@+id/drawButton_save"
+			android:layout_width="108px"
+			android:layout_height="50px"
+			android:background="@drawable/round_corner_gray"
+			android:text="保存"
+			android:textColor="@color/white"
+		></Button>
+	</LinearLayout>
+	
+	<include 
+		layout="@layout/color_choose"
+		
+	></include>	
+
+	
+</RelativeLayout>
+</FrameLayout>

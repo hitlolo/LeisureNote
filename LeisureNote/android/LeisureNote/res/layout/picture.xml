@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/22 -->
+<!-- Description:图片笔记选择页面的布局 -->
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/transparent_black"
+	android:id="@+id/pictureFrame"
+	android:visibility="invisible"
+
+    >
+    <FrameLayout
+  	  	android:background="@drawable/round_corner"
+		android:layout_width="400px"
+		android:layout_height="250px"		
+		android:layout_gravity="center"
+		android:focusable="true"
+		android:clickable="true"
+		
+    >
+    	 <LinearLayout
+		   		android:orientation="vertical"
+		   		android:background="@color/transparent_background"
+		   		android:layout_width="380px"
+		   		android:layout_height="230px"
+		   		android:layout_gravity="center"
+		   
+	  		 >
+	   			<TextView
+			   		android:text="图片笔记"
+			   		android:textColor="@color/white"
+			   		android:layout_width="wrap_content"
+			   		android:layout_height="wrap_content"
+			   		android:layout_gravity="center"
+			   	></TextView>
+		   
+			   <!-- 分割线 -->
+			   <LinearLayout
+			   		android:layout_width="360px"
+			   		android:layout_height="2px"
+			   		android:background="@color/light_green"
+			   		android:layout_gravity="center"
+			   		android:layout_marginTop="5px"
+			   >
+			   </LinearLayout>
+			   
+			   <LinearLayout
+			   		android:orientation="horizontal"
+			   		android:layout_width="320px"
+			   		android:layout_height="120px"
+					android:layout_marginTop="5px"
+			   		android:layout_gravity="center"
+			   					   				   		
+			   >
+			   		<ImageView
+			   			android:id="@+id/imageResource"
+			   			android:layout_width="120px"
+			   			android:layout_height="120px"
+			   			android:adjustViewBounds="true"
+			   			android:layout_gravity="left|center"
+			   			android:background="@drawable/imageview_background"
+			   		></ImageView>
+			   		
+			   		<LinearLayout
+			   			android:layout_marginLeft="10px"
+			   			android:orientation="vertical"
+			   			android:layout_width="200px"
+			   			android:layout_height="match_parent"
+		   				android:layout_gravity="right|center"
+		   			>
+			   		<LinearLayout
+			   			android:orientation="horizontal"
+			   			android:layout_width="wrap_content"
+			   			android:layout_height="wrap_content"
+			   			android:layout_marginTop="10px"
+			   		>	   		
+					   		<TextView
+					   			android:text="名称:"
+					   			android:layout_width="match_parent"
+					   			android:layout_height="wrap_content"
+					   			android:textColor="@color/white"
+					   		></TextView>
+					   		
+					   		<ScrollView
+			   					android:layout_width="wrap_content"
+			   					android:layout_height="32px"
+			   				>
+					   			<TextView
+					   				android:id="@+id/textPicTitle"
+					   				android:text="暂无图片"
+					   				android:layout_width="match_parent"
+					   				android:layout_height="wrap_content"
+					   				android:textColor="@color/white"
+					   			></TextView>
+				   			</ScrollView>
+			   		</LinearLayout>
+			   		
+			   		<LinearLayout
+			   			android:orientation="horizontal"
+			   			android:layout_width="wrap_content"
+			   			android:layout_height="wrap_content"
+			   			android:layout_marginTop="5px"
+			   			
+			   		>
+				   		<TextView
+				   			android:text="时间:"
+				   			android:layout_width="match_parent"
+				   			android:layout_height="wrap_content"
+				   			android:textColor="@color/white"
+				   		
+				   		></TextView>
+				   		<ScrollView
+			   				android:layout_width="wrap_content"
+			   				android:layout_height="32px"
+			   			>
+					   		<TextView
+					   			android:text="暂无图片"
+					   			android:id="@+id/textPicTime"
+					   			android:layout_width="match_parent"
+					   			android:layout_height="wrap_content"
+					   			android:textColor="@color/white"
+					   		
+					   		></TextView>
+				   		</ScrollView>
+			   		</LinearLayout>
+			   		
+			   		<LinearLayout
+			   			android:orientation="horizontal"
+			   			android:layout_width="wrap_content"
+			   			android:layout_height="wrap_content"	
+			   			android:layout_marginTop="5px"		   			
+			   		>
+				   		<TextView
+				   			android:text="格式:"
+				   			android:layout_width="match_parent"
+				   			android:layout_height="wrap_content"
+					   		android:textColor="@color/white"
+				   		></TextView>
+				   		<TextView
+				   			android:text="暂无图片"
+				   			android:id="@+id/textPicFormat"
+				   			android:layout_width="match_parent"
+				   			android:layout_height="wrap_content"
+				   		    android:textColor="@color/white"
+				   		></TextView>
+			   		</LinearLayout> 
+			   		 		
+		   		 </LinearLayout> <!--文字框  -->
+			</LinearLayout>	<!-- 图片文本框 -->
+			
+			<!-- 分割线 -->
+			<LinearLayout
+			   	android:layout_width="360px"
+			   	android:layout_height="2px"
+			   	android:background="@color/light_green"
+			   	android:layout_gravity="center"
+			   	android:layout_marginTop="5px"
+			>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="310px"
+				android:layout_height="50px"
+				android:layout_gravity="center"
+				android:orientation="horizontal"
+				android:background="@drawable/round_corner_green"
+				android:layout_marginTop="5px"
+			>
+				<Button
+					android:layout_width="100px"
+					android:layout_height="50px"
+					android:background="@drawable/button_green_orange"
+					android:textColor="@color/white"
+					android:text="相机"
+					android:layout_gravity="left|center"
+					android:layout_marginLeft="5px"
+					android:id="@+id/buttonPicCamera"
+				></Button>
+				<LinearLayout
+					android:layout_width="1px"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+					android:layout_width="100px"
+					android:layout_height="50px"
+					android:background="@drawable/button_green_orange"
+					android:textColor="@color/white"
+					android:text="本地"
+					android:layout_gravity="center"
+					android:id="@+id/buttonPicLocal"
+				></Button>
+				<LinearLayout
+					android:layout_width="1px"
+					android:layout_height="match_parent"
+					android:background="@color/white"
+				></LinearLayout>
+				<Button
+					android:layout_width="98px"
+					android:layout_height="50px"
+					android:background="@drawable/button_green_orange"
+					android:textColor="@color/white"
+					android:text="绘制"
+					android:layout_gravity="right|center"
+					android:id="@+id/buttonPicDraw"
+				></Button>
+			
+			</LinearLayout><!-- 按钮框 -->
+				   
+		</LinearLayout><!-- 半透明内框 -->
+    </FrameLayout><!-- 圆角背景 -->
+    
+    <ImageView
+    	android:id="@+id/preViewImage"
+    	android:adjustViewBounds="true"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:visibility="invisible"
+    	android:background="@drawable/imageview_background"
+    ></ImageView>
+</FrameLayout><!-- 蒙板 -->

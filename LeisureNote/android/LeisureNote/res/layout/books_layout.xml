@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!-- Author:Lolo -->
+<!-- Date:2012/5/3 -->
+<!-- Description:笔记本页面的布局 -->
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/drawboard_background"
+	android:id="@+id/booksLayout"
+	android:padding="5dp"
+>		
+		<GridView
+			android:id="@+id/books_gridview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:numColumns="auto_fit"
+			android:horizontalSpacing="3px"
+			android:verticalSpacing="0px"
+			android:stretchMode="spacingWidthUniform"
+			android:scrollingCache="true"
+			android:columnWidth="140px"
+			
+		></GridView>
+	
+</FrameLayout>

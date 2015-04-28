@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		
+		android:layout_width="80px"
+		android:layout_height="380px"
+		android:background="@drawable/color_choose_background"
+		android:orientation="vertical"
+		android:padding="10px"	
+		android:id="@+id/barColorChoose"	
+		android:layout_gravity="center_horizontal"
+	>
+	
+	<!-- green_brown,right_green,yellow_orange,peach_red -->
+		<Button
+			android:layout_width="60px"
+			android:layout_height="60px"
+			android:background="@color/green_brown"
+			android:id="@+id/colorButton_brown"
+		></Button>
+		
+		<Button
+			android:layout_width="60px"
+			android:layout_height="60px"
+			android:background="@color/right_green"
+			android:id="@+id/colorButton_green"
+			android:layout_marginTop="10px"
+		></Button>
+		
+		<Button
+			android:layout_width="60px"
+			android:layout_height="60px"
+			android:background="@color/yellow_orange"
+			android:id="@+id/colorButton_yellow"
+			android:layout_marginTop="10px"
+		></Button>
+		
+		<Button
+			android:layout_width="60px"
+			android:layout_height="60px"
+			android:background="@color/peach_red"
+			android:id="@+id/colorButton_red"
+				android:layout_marginTop="10px"
+		></Button>
+		
+		<Button
+			android:layout_width="60px"
+			android:layout_height="60px"
+			android:background="@color/purple"
+			android:id="@+id/colorButton_purple"
+				android:layout_marginTop="10px"
+		></Button>
+		
+</LinearLayout>

@@ -1,0 +1,25 @@
+<!-- Date:2012/3/15 -->
+<!-- Description:注册页面的按钮颜色 -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	    <item
+	        android:state_enabled="true"
+	        android:drawable="@drawable/round_corner_green"
+		/>
+	
+	    <item
+	        android:state_pressed="true"
+			android:drawable="@drawable/round_corner_gray"
+		/>
+		
+	    <item
+	        android:state_window_focused="true"
+	        android:drawable="@drawable/round_corner_gray"
+		/>
+		<item
+	        android:state_enabled="false"
+	        android:drawable="@drawable/round_corner_gray"
+		/>
+	
+</selector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Author:Lolo -->
+<!-- Date:2012/3/15 -->
+<!-- Description:注册页面性别选框的字体颜色 -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <item 
+          android:state_enabled="true"
+          android:state_checked="true"
+          android:color="@color/white"
+    /> 
+    <item              
+          android:state_enabled="true"    
+          android:state_checked="false"
+          android:color="@color/blue_iron" 
+    /> 
+</selector>
